@@ -1,0 +1,13 @@
+.category-title{
+  font-family: 'Poppins', Arial, sans-serif;
+  @include list-unstyled;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+  margin-bottom: 16px;
+}
+
+.category-content__wrapper {
+  margin-left: 15px;
+}
