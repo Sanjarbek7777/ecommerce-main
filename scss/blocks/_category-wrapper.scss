@@ -80,6 +80,17 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .content-wrapper{
+    max-width: 420px;
+    padding: 48px 182px 35px 33px;
+    background: #F4F8EC;
+    border-radius: 12px;
+    background-image: url(../../img/catagory-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
   .content-list{
     flex-direction: column;
   }
