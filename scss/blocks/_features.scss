@@ -57,10 +57,11 @@
 .drop-down__list {
   @include list-unstyled;
   position: absolute;
-  width: 100%;
+  width: 100px;
   background-color: white;
   border-radius: 5px;
   padding: 10px;
+  display: none;
 }
 
 .drop-down__item:not(:last-child) {

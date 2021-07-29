@@ -20,6 +20,10 @@
   display: none;
 }
 
+.site-logo{
+  flex-shrink: 0;
+}
+
 @media only screen and (max-width: 768px) {
   .form-wrapper-content {
     display: none;
