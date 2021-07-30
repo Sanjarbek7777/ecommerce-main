@@ -1698,4 +1698,8 @@ img {
   line-height: 16px;
   color: #151515;
 }
+
+.vegitable-item__img {
+  margin-left: 48px;
+}
 /*# sourceMappingURL=main.css.map */
