@@ -871,6 +871,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .one-wrapper {
@@ -885,6 +888,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-left: 110px;
 }
 
@@ -1007,12 +1016,11 @@ img {
 }
 
 .prodact-list {
-  margin-left: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
+}
+
+.prodact-title {
+  margin: 0;
 }
 
 @media only screen and (max-width: 375px) {
@@ -1515,5 +1523,179 @@ img {
   .form-open .form-wrapper__features {
     display: block;
   }
+}
+
+.blog {
+  padding-top: 148px;
+  padding-bottom: 122px;
+}
+
+.blog-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-wrapper__chef {
+  max-width: 469px;
+  height: 400px;
+  border-radius: 12px;
+  background-image: url(../../img/blog-wrapper-chef.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 24px 65px 24px 24px;
+}
+
+.blog-wrapper__span {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  background-color: #F4F8EC;
+  border-radius: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.blog-wrapper__title {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #FFFFFF;
+  width: 380px;
+  padding-top: 228px;
+  margin-bottom: 8px;
+}
+
+.blog-wrapper__author {
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog-wrapper__author::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(../../img/avatar-author.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 8px;
+}
+
+.blog-wrapper__time {
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin-left: 16px;
+}
+
+.blog-vegitable {
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog-vegitable__img {
+  max-width: 269px;
+}
+
+.blog-vegitable__span {
+  font-family: "Poppins";
+  width: 80px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  background-color: #F4F8EC;
+  border-radius: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.blog-vegitable__title {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+  margin-bottom: 16px;
+}
+
+.blog-vegitable__author {
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.blog-vegitable__time {
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.vegitable-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.vegitable-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vegitable-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.vegitable-item__title {
+  font-family: "Poppins";
+  width: 225px;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  margin-bottom: 16px;
+}
+
+.vrgitable-item__author {
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.vegitable-item__time {
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
 }
 /*# sourceMappingURL=main.css.map */

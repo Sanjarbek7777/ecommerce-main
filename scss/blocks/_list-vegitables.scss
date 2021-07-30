@@ -1,0 +1,34 @@
+.vegitable-list{
+  @include list-unstyled;
+}
+
+.vegitable-item{
+  display: flex;
+
+  &:not(:last-child){
+    margin-bottom: 32px;
+  }
+}
+
+.vegitable-item__title{
+  font-family: "Poppins";
+  width: 225px;
+  @include title-unstyled;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  margin-bottom: 16px;
+}
+
+.vrgitable-item__author{
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.vegitable-item__time{
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
