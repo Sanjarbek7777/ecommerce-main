@@ -6,6 +6,7 @@
 .blog-wrapper{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .blog-wrapper__chef{
@@ -69,6 +70,17 @@
   margin-left: 16px;
 }
 
+@media only screen and (max-width: 1150px) {
+  .blog-wrapper__chef{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .blog-wrapper__title{
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .blog-wrapper{
     flex-wrap: wrap;
@@ -81,6 +93,22 @@
 
   .blog-wrapper__title{
     width: 550px;
+  }
+}
+
+@media only screen and (max-width:570px) {
+  .blog-wrapper__title{
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .blog-wrapper__title{
+    width: 350px;
+  }
+
+  .blog-wrapper__chef{
+    height: 100%;
   }
 }
 

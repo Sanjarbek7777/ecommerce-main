@@ -37,6 +37,13 @@
   margin-left: 48px;
 }
 
+@media only screen and (max-width: 1150px) {
+  .vegitable-list{
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 @media only screen and (max-width: 380px) {
   .vegitable-item__img{
     margin-left: 15px;
